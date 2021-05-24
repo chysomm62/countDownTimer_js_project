@@ -36,8 +36,10 @@ const minutes = futureDate.getMinutes();
 let month = futureDate.getMonth();
 month = months[month];
 
+const date = futureDate.getDate();
+
 let day = futureDate.getDay();
 day = weekdays[day]; 
 
 // add to html
-giveaway.textContent = `giveaway ends on  ${day} ${month} ${year} ${hours}: ${minutes}am`;
+giveaway.textContent = `giveaway ends on  ${day}, ${date} ${month} ${year} ${hours}:${minutes}am`;
